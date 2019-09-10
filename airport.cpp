@@ -46,14 +46,20 @@ public:
     }
 
     T &operator[](int i) { return elem[i]; }
+    T &operator()(int i) { return elem[i]; }
 
     int size() { return sz; }
 };
 
-/*int main() {
+/*
+int main() {
 
     Less_than<int> lti{42};
     Less_than<std::string> lts{"kuda"};
+
+
+
+
 
 
     bool b1 = lti(42);
@@ -61,5 +67,6 @@ public:
     std::cout << "b1 " << b1 << std::endl;
 
 
-}*/
+}
+*/
 

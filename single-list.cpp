@@ -6,7 +6,7 @@ template<typename T>
 class node {
 private:
     T value;
-    node<T> *next;
+    node<T> *left;
 
 
 public:
@@ -14,7 +14,7 @@ public:
 
     explicit node(const T &v) {
         value = v;
-        next = nullptr;
+        left = nullptr;
     }
 
     void set_value(const T &v) {
@@ -27,11 +27,11 @@ public:
     }
 
     void set_next(node<T> *n) {
-        next = n;
+        left = n;
     }
 
     node<T> *get_next() {
-        return next;
+        return left;
     }
 
     void print() const {
