@@ -31,6 +31,7 @@ void merge(int X[], int Y[], int m, int n) {
     }
 }
 
+/*
 int main() {
 
 
@@ -48,4 +49,4 @@ int main() {
     print_array(Y, n);
 
     return 0;
-}
+}*/
